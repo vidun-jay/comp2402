@@ -1,0 +1,57 @@
+{
+  "pkg_name": "comp2402w23l4",
+  "main_java_file": "Part4",
+  "test_subdir": null,
+  "test_cases": [
+    {
+      "name": "2 - two multiples - both distinct, same as Lab 1 Part 3",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab4-p4-2-in.txt",
+      "outfile":"lab4-p4-2-out.txt"
+    },
+    {
+      "name": "3 - a few lines, some multiples, some duplicates",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab4-p4-3-in.txt",
+      "outfile":"lab4-p4-3-out.txt"
+    },
+    {
+      "name": "4 - contains integer bigger than 240223 -- no mods here",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab4-p4-4-in.txt",
+      "outfile":"lab4-p4-4-out.txt"
+    },
+    {
+      "name": "5 - contains a really big integer -- no overflow here",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab4-p4-5-in.txt",
+      "outfile":"lab4-p4-5-out.txt"
+    },
+    {
+      "name": "6 - from the specifications",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab4-p4-6-in.txt",
+      "outfile":"lab4-p4-6-out.txt"
+    },
+    {
+      "name": "7 - different from Lab 1",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab4-p4-7-in.txt",
+      "outfile":"lab4-p4-7-out.txt"
+    },
+    {
+      "name": "8 - different from Lab 1 & Lab 3",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab4-p4-8-in.txt",
+      "outfile":"lab4-p4-8-out.txt"
+    },
+
+    {
+      "name": "9 - big n (n > 1,000,000)",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab4-p4-9-in.txt",
+      "outfile":"lab4-p4-9-out.txt"
+    }
+
+  ]
+}

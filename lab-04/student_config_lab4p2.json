@@ -1,0 +1,69 @@
+{
+  "pkg_name": "comp2402w23l4",
+  "main_java_file": "Part2",
+  "test_subdir": null,
+  "test_cases": [
+    {
+      "name": "0 - compilation only",
+      "params": ["3"],
+      "infile":"lab4-p2-1-in.txt",
+      "outfile":"lab4-p2-1-out.txt"
+    },
+    {
+      "name": "1 - empty file",
+      "params": ["3"],
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab4-p2-1-in.txt",
+      "outfile":"lab4-p2-1-out.txt"
+    },
+    {
+      "name": "2 - small file",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "params": ["4"],
+      "infile":"lab4-p2-2-in.txt",
+      "outfile":"lab4-p2-2-out-x-4.txt"
+    },
+    {
+      "name": "3 - no output on non-empty file",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "params": ["3"],
+      "infile":"lab4-p2-3-in.txt",
+      "outfile":"lab4-p2-3-out-x-3.txt"
+    },
+    {
+      "name": "4 - contains duplicates",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "params": ["3"],
+      "infile":"lab4-p2-4-in.txt",
+      "outfile":"lab4-p2-4-out-x-3.txt"
+    },
+    {
+      "name": "5 - from the specifications",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "params": ["3"],
+      "infile":"lab4-p2-5-in.txt",
+      "outfile":"lab4-p2-5-out-x-3.txt"
+    },
+    {
+      "name": "6 - some negative numbers",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "params": ["4"],
+      "infile":"lab4-p2-6-in.txt",
+      "outfile":"lab4-p2-6-out-x-4.txt"
+    },
+    {
+      "name": "7 - random numbers some negative",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "params": ["5"],
+      "infile":"lab4-p2-7-in.txt",
+      "outfile":"lab4-p2-7-out-x-5.txt"
+    },
+    {
+      "name": "7 - big n (n > 1,000,000)",
+      "flags": ["-Xss208k", "-Xmx512m"],
+      "params": ["5"],
+      "infile":"lab4-p2-8-in.txt",
+      "outfile":"lab4-p2-8-out-x-5.txt"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "pkg_name": "comp2402w23l4",
+  "main_java_file": "Part3",
+  "test_subdir": null,
+  "test_cases": [
+    {
+      "name": "0 - compilation only",
+      "infile":"lab3-p1-1-in.txt",
+      "outfile":"lab3-p1-1-out.txt"
+    },
+    {
+      "name": "1 - empty file - output 0",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab3-p1-1-in.txt",
+      "outfile":"lab3-p1-1-out.txt"
+    },
+    {
+      "name": "2 - one line - ouptut 0",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab3-p1-2-in.txt",
+      "outfile":"lab3-p1-2-out.txt"
+    },
+    {
+      "name": "3 - two lines, second not multiple of first - same as Lab 1 Part 1",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab3-p1-3-in.txt",
+      "outfile":"lab3-p1-3-out.txt"
+    },
+    {
+      "name": "4 - two lines, second multiple of first - same as Lab 1 Part 1",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab3-p1-4-in.txt",
+      "outfile":"lab3-p1-4-out.txt"
+    },
+    {
+      "name": "5 - contains integer bigger than 240223 - same as Lab 1 Part 1",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab3-p1-5-in.txt",
+      "outfile":"lab3-p1-5-out.txt"
+    },
+    {
+      "name": "6 - contains a really big integer that could cause overflow",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab3-p1-6-in.txt",
+      "outfile":"lab3-p1-6-out.txt"
+    },
+    {
+      "name": "7 - from the specifications -- different from Lab 1 Part 1",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab3-p1-7-in.txt",
+      "outfile":"lab3-p1-7-out.txt"
+    },
+    {
+      "name": "8 - different from Lab 1 Part 1",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab3-p1-8-in.txt",
+      "outfile":"lab3-p1-8-out.txt"
+    },
+    {
+      "name": "9 - different from Lab 1 Part 1",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab3-p1-9-in.txt",
+      "outfile":"lab3-p1-9-out.txt"
+    },
+    {
+      "name": "10 - big n (n > 1,000,000)",
+      "flags": ["-Xss208k", "-Xmx1023m"],
+      "infile":"lab3-p1-10-in.txt",
+      "outfile":"lab3-p1-10-out.txt"
+    }
+
+
+  ]
+}

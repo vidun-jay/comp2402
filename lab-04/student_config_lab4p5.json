@@ -1,0 +1,73 @@
+{
+  "pkg_name": "comp2402w23l4",
+  "main_java_file": "Part5",
+  "test_subdir": null,
+  "test_cases": [
+    {
+      "name": "0 - compilation only",
+      "infile":"lab4-p5-1-in.txt",
+      "outfile":"lab4-p5-1-out.txt"
+    },
+    {
+      "name": "1 - empty file - output zero",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab4-p5-1-in.txt",
+      "outfile":"lab4-p5-1-out.txt"
+    },
+    {
+      "name": "2 - just a red root - paint it black",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab4-p5-2-in.txt",
+      "outfile":"lab4-p5-2-out.txt"
+    },
+    {
+      "name": "3 - all black - output same as input",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab4-p5-3-in.txt",
+      "outfile":"lab4-p5-3-out.txt"
+    },
+    {
+      "name": "4 - from the specifications",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab4-p5-4-in.txt",
+      "outfile":"lab4-p5-4-out.txt"
+    },
+    {
+      "name": "5 - all red n=3",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab4-p5-5-in.txt",
+      "outfile":"lab4-p5-5-out.txt"
+    },
+    {
+      "name": "6 - all red n=12",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab4-p5-6-in.txt",
+      "outfile":"lab4-p5-6-out.txt"
+    },
+    {
+      "name": "7 - one red-red edge n=14",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab4-p5-7-in.txt",
+      "outfile":"lab4-p5-7-out.txt"
+    },
+    {
+      "name": "8 - root toggled twice",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab4-p5-8-in.txt",
+      "outfile":"lab4-p5-8-out.txt"
+    },
+    {
+      "name": "9 - n=20",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab4-p5-9-in.txt",
+      "outfile":"lab4-p5-9-out.txt"
+    },
+    {
+      "name": "10 - large n (n > 1,000,000)",
+      "flags": ["-Xss208k", "-Xmx512m"],
+      "infile":"lab4-p1-10-in.txt",
+      "outfile":"lab4-p5-10-out.txt"
+    }
+
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "pkg_name": "comp2402w23l4",
+  "main_java_file": "Part1",
+  "test_subdir": null,
+  "test_cases": [
+    {
+      "name": "3 - a heap - output same as input",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab4-p1-3-in.txt",
+      "outfile":"lab4-p1-3-out.txt"
+    },
+    {
+      "name": "4 - from the specifications",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab4-p1-4-in.txt",
+      "outfile":"lab4-p1-4-out.txt"
+    },
+    {
+      "name": "5 - ties are okay",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab4-p1-5-in.txt",
+      "outfile":"lab4-p1-5-out.txt"
+    },
+    {
+      "name": "6 - lots of swaps",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab4-p1-6-in.txt",
+      "outfile":"lab4-p1-6-out.txt"
+    },
+    {
+      "name": "7 - make sure you swap with parent, not with child",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab4-p1-7-in.txt",
+      "outfile":"lab4-p1-7-out.txt"
+    },
+    {
+      "name": "8 - multiple swaps",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab4-p1-8-in.txt",
+      "outfile":"lab4-p1-8-out.txt"
+    },
+    {
+      "name": "9 - every node requires a swap",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab4-p1-9-in.txt",
+      "outfile":"lab4-p1-9-out.txt"
+    },
+    {
+      "name": "10 - very big input (n >> 1,000,000)",
+      "flags": ["-Xss208k", "-Xmx64m"],
+      "infile":"lab4-p1-10-in.txt",
+      "outfile":"lab4-p1-10-out.txt"
+    }
+
+  ]
+}

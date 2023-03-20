@@ -1,0 +1,161 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "HCPractice",
+            "request": "launch",
+            "mainClass": "comp2402w23l4.HCPractice",
+            "projectName": "lab-04_14545b4a"
+        },
+        {
+            "type": "java",
+            "name": "MyBinaryHeap",
+            "request": "launch",
+            "mainClass": "comp2402w23l4.MyBinaryHeap",
+            "projectName": "lab-04_14545b4a"
+        },
+        {
+            "type": "java",
+            "name": "Part1",
+            "request": "launch",
+            "mainClass": "comp2402w23l4.Part1",
+            "projectName": "lab-04_14545b4a",
+            // "args": ["./tests/lab4-p1-1-in.txt", "comp2402w23l4/out.txt"],
+            // "args": ["./tests/lab4-p1-2-in.txt", "comp2402w23l4/out.txt"],
+            // "args": ["./tests/lab4-p1-3-in.txt", "comp2402w23l4/out.txt"],
+            "args": ["./tests/lab4-p1-4-in.txt", "comp2402w23l4/out.txt"],
+            // "args": ["./tests/lab4-p1-5-in.txt", "comp2402w23l4/out.txt"],
+            // "args": ["./tests/lab4-p1-6-in.txt", "comp2402w23l4/out.txt"],
+            // "args": ["./tests/lab4-p1-7-in.txt", "comp2402w23l4/out.txt"],
+            // "args": ["./tests/lab4-p1-8-in.txt", "comp2402w23l4/out.txt"],
+            // "args": ["./tests/lab4-p1-9-in.txt", "comp2402w23l4/out.txt"],
+            // "args": ["./tests/lab4-p1-10-in.txt", "comp2402w23l4/out.txt"],
+            "jvmArgs": ["-Xss208k", "-Xmx6m"]
+        },
+        {
+            "type": "java",
+            "name": "Part2",
+            "request": "launch",
+            "mainClass": "comp2402w23l4.Part2",
+            "projectName": "lab-04_14545b4a"
+        },
+        {
+            "type": "java",
+            "name": "Part3",
+            "request": "launch",
+            "mainClass": "comp2402w23l4.Part3",
+            "projectName": "lab-04_14545b4a"
+        },
+        {
+            "type": "java",
+            "name": "Part4",
+            "request": "launch",
+            "mainClass": "comp2402w23l4.Part4",
+            "projectName": "lab-04_14545b4a",
+            // "args": ["./tests/lab4-p4-1-in.txt", "comp2402w23l4/out.txt"],
+            // "args": ["./tests/lab4-p4-2-in.txt", "comp2402w23l4/out.txt"],
+            // "args": ["./tests/lab4-p4-3-in.txt", "comp2402w23l4/out.txt"],
+            // "args": ["./tests/lab4-p4-4-in.txt", "comp2402w23l4/out.txt"],
+            // "args": ["./tests/lab4-p4-5-in.txt", "comp2402w23l4/out.txt"],
+            "args": ["./tests/lab4-p4-6-in.txt", "comp2402w23l4/out.txt"],
+            // "args": ["./tests/lab4-p4-7-in.txt", "comp2402w23l4/out.txt"],
+            // "args": ["./tests/lab4-p4-8-in.txt", "comp2402w23l4/out.txt"],
+            // "args": ["./tests/lab4-p4-9-in.txt", "comp2402w23l4/out.txt"],
+            // "args": ["./tests/lab4-p4-10-in.txt", "comp2402w23l4/out.txt"],
+        },
+        {
+            "type": "java",
+            "name": "Part5",
+            "request": "launch",
+            "mainClass": "comp2402w23l4.Part5",
+            "projectName": "lab-04_14545b4a"
+        },
+        {
+            "type": "java",
+            "name": "Part6",
+            "request": "launch",
+            "mainClass": "comp2402w23l4.Part6",
+            "projectName": "lab-04_14545b4a"
+        },
+        {
+            "type": "java",
+            "name": "ArrayQueue",
+            "request": "launch",
+            "mainClass": "ods.ArrayQueue",
+            "projectName": "lab-04_14545b4a"
+        },
+        {
+            "type": "java",
+            "name": "BinaryHeap",
+            "request": "launch",
+            "mainClass": "ods.BinaryHeap",
+            "projectName": "lab-04_14545b4a"
+        },
+        {
+            "type": "java",
+            "name": "HashTable",
+            "request": "launch",
+            "mainClass": "ods.HashTable",
+            "projectName": "lab-04_14545b4a"
+        },
+        {
+            "type": "java",
+            "name": "MeldableHeap",
+            "request": "launch",
+            "mainClass": "ods.MeldableHeap",
+            "projectName": "lab-04_14545b4a"
+        },
+        {
+            "type": "java",
+            "name": "MultiplicativeHashSet",
+            "request": "launch",
+            "mainClass": "ods.MultiplicativeHashSet",
+            "projectName": "lab-04_14545b4a"
+        },
+        {
+            "type": "java",
+            "name": "RedBlackTree",
+            "request": "launch",
+            "mainClass": "ods.RedBlackTree",
+            "projectName": "lab-04_14545b4a"
+        },
+        {
+            "type": "java",
+            "name": "SEList",
+            "request": "launch",
+            "mainClass": "ods.SEList",
+            "projectName": "lab-04_14545b4a"
+        },
+        {
+            "type": "java",
+            "name": "SLList",
+            "request": "launch",
+            "mainClass": "ods.SLList",
+            "projectName": "lab-04_14545b4a"
+        },
+        {
+            "type": "java",
+            "name": "SkiplistList",
+            "request": "launch",
+            "mainClass": "ods.SkiplistList",
+            "projectName": "lab-04_14545b4a"
+        },
+        {
+            "type": "java",
+            "name": "SkiplistSSet",
+            "request": "launch",
+            "mainClass": "ods.SkiplistSSet",
+            "projectName": "lab-04_14545b4a"
+        }
+    ]
+}

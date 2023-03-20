@@ -1,0 +1,360 @@
+package comp2402w23l4;
+
+import java.lang.reflect.Array;
+import java.util.AbstractQueue;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Iterator;
+import java.util.Random;
+
+/**
+ * This class implements a priority queue as a class binary heap
+ * stored implicitly in an array
+ * @author morin
+ *
+ * @param <T>
+ */
+public class MyBinaryHeap<T> extends AbstractQueue<T> {
+
+	Comparator<T> c;
+
+	/**
+	 * Our backing array
+	 */
+	protected T[] a;
+
+	/**
+	 * The number of elements in the priority queue
+	 */
+	protected int n;
+
+	/**
+	 * Create a new empty binary heap
+	 * @param c
+	 */
+	public MyBinaryHeap() {
+		this(new DefaultComparator<T>());
+	}
+
+	@SuppressWarnings("unchecked")
+	public MyBinaryHeap(Comparator<T> c0) {
+		c = c0;
+		a = (T[]) new Object[1];
+		n = 0;
+	}
+
+	@SuppressWarnings("unchecked")
+	public void clear() {
+		a = (T[]) new Object[1];
+		n = 0;
+	}
+
+	/**
+	 * Create a new binary heap by heapifying a
+	 * @param a
+	 */
+	public MyBinaryHeap(T[] a) {
+		this(a, new DefaultComparator<T>());
+	}
+
+	/**
+	 * Create a new binary heap by heapifying a
+	 * @param a
+	 */
+	public MyBinaryHeap(T[] a, Comparator<T> c) {
+		this.c = c;
+		this.a = a;
+		n = a.length;
+		for (int i = n/2-1; i >= 0; i--) {
+			trickleDown(i);
+		}
+	}
+
+
+	@SuppressWarnings("unchecked")
+	protected void resize() {
+		T[] b = (T[]) new Object[Math.max(n * 2, 1)];
+		System.arraycopy(a, 0, b, 0, n);
+		a = b;
+	}
+
+	/**
+	 * @param i
+	 * @return the index of the left child of the value at index i
+	 */
+	protected int left(int i) {
+		return 2*i + 1;
+	}
+
+	/**
+	 * @param i
+	 * @return the index of the left child of the value at index i
+	 */
+	protected int right(int i) {
+		return 2*i + 2;
+	}
+
+	/**
+	 * @param i
+	 * @return the index of the parent of the value at index i
+	 */
+	protected int parent(int i) {
+		return (i-1)/2;
+	}
+
+
+	public int size() {
+		return n;
+	}
+
+	/**
+	 * Swap the two values a[i] and a[j]
+	 * @param i
+	 * @param j
+	 */
+	final protected void swap(int i, int j) {
+		T x = a[i];
+		a[i] = a[j];
+		a[j] = x;
+	}
+
+
+
+	public boolean offer(T x) {
+		return add(x);
+	}
+
+	public boolean add(T x) {
+		if (n + 1 > a.length) resize();
+		a[n++] = x;
+		bubbleUp(n-1);
+		return true;
+	}
+
+	/**
+	 * Run the bubbleUp routine at position i
+	 * @param i
+	 */
+	protected void bubbleUp(int i) {
+		int p = parent(i);
+		while (i > 0 && c.compare(a[i], a[p]) < 0) {
+			swap(i,p);
+			i = p;
+			p = parent(i);
+		}
+	}
+
+	public T peek() {
+		return a[0];
+	}
+
+	public T poll() {
+		return remove();
+	}
+
+	public T remove() {
+		T x = a[0];
+		a[0] = a[--n];
+		trickleDown(0);
+		if (3*n < a.length) resize();
+		return x;
+	}
+
+	// TODO(student): Fill in the copy code.
+	public void copy(int k) {
+
+		// if k is 0 there is nothing to do
+		// if (k == 0) return;
+
+		// create a new, bigger array
+		T[] b = Arrays.copyOf(a, n * k);
+
+		// copy each item over
+		for (int i = n - 1; i >= 0; --i) {
+			for (int j = 0; j < k; ++j)
+				b[i * k + j] = a[i];
+		}
+
+		// update class variables
+		a = b;
+		n = n * k;
+
+		// maintain heap property
+		int i = parent(n-1);
+		while (i >= 0) {
+			trickleDown(i);
+			--i;
+		}
+	}
+
+
+
+	/**
+	 * Move element i down in the heap until the heap
+	 * property is restored
+	 * @param i
+	 */
+	protected void trickleDown(int i) {
+		do {
+			int j = -1;
+			int r = right(i);
+			if (r < n && c.compare(a[r], a[i]) < 0) {
+				int l = left(i);
+				if (c.compare(a[l], a[r]) < 0) {
+					j = l;
+				} else {
+					j = r;
+				}
+			} else {
+				int l = left(i);
+				if (l < n && c.compare(a[l], a[i]) < 0) {
+					j = l;
+				}
+			}
+			if (j >= 0)	swap(i, j);
+			i = j;
+		} while (i >= 0);
+	}
+
+	public Iterator<T> iterator() {
+		class PQI implements Iterator<T> {
+			int i;
+			public PQI() {
+				i = 0;
+			}
+			public boolean hasNext() {
+				return i < n;
+			}
+			public T next() {
+				return a[i++];
+			}
+			public void remove() {
+				throw new UnsupportedOperationException();
+			}
+		}
+		return new PQI();
+	}
+
+	/**
+	 * An implementation of the heapsort algorithm
+	 * @param <T>
+	 * @param a
+	 */
+
+	public static <T> void sort(T[] a, Comparator<T> c) {
+		MyBinaryHeap<T> h = new MyBinaryHeap<T>(a, c);
+		while (h.n > 1) {
+			h.swap(--h.n, 0);
+			h.trickleDown(0);
+		}
+		Collections.reverse(Arrays.asList(a));
+	}
+
+	public static <T extends Comparable<T>> void sort(T[] a) {
+		sort(a, new DefaultComparator<T>());
+	}
+
+
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		MyBinaryHeap<Integer> h = new MyBinaryHeap<Integer>();
+		Random r = new Random();
+		int n = 20;
+		for (int i = 0; i < n; i++) {
+			h.add(r.nextInt(2500));
+		}
+		System.out.println(h);
+
+		System.out.println( "\nRemoving all elements");
+		while (!h.isEmpty()) {
+			System.out.print("" + h.remove() + ",");
+		}
+		System.out.println("\nDone remove all elements.");
+
+		System.out.println( "Testing sorting and iterating.");
+		Integer[] a = new Integer[n];
+		for (int i = 0; i < n; i++) {
+			a[i] = r.nextInt(2500);
+		}
+		MyBinaryHeap.sort(a);
+		for (Integer x : a) {
+			System.out.print("" + x + ",");
+		}
+		System.out.println("\nDone sorting and iterating.");
+
+		n = 100000;
+		long start, stop;
+		double elapsed;
+		System.out.print("performing " + n + " adds...");
+		start = System.nanoTime();
+		for (int i = 0; i < n; i++) {
+			h.add(r.nextInt());
+		}
+		stop = System.nanoTime();
+		elapsed = 1e-9*(stop-start);
+		System.out.println("(" + elapsed + "s ["
+				+ (int)(((double)n)/elapsed) + "ops/sec])");
+
+		n *= 10;
+		System.out.print("performing " + n + " add/removes...");
+		start = System.nanoTime();
+		for (int i = 0; i < n; i++) {
+			if (r.nextBoolean()) {
+				h.add(r.nextInt());
+			} else {
+				h.remove();
+			}
+		}
+		stop = System.nanoTime();
+		elapsed = 1e-9*(stop-start);
+		System.out.println("(" + elapsed + "s ["
+				+ (int)(((double)n)/elapsed) + "ops/sec])");
+
+		System.out.println( "\nTesting copy");
+		n = 10;
+		h = new MyBinaryHeap<Integer>();
+		for (int i = 0; i < n; i++) {
+			h.add(r.nextInt(200));
+		}
+		System.out.println(h);
+		h.copy(2);
+		System.out.println( "after copy(2)");
+		System.out.println(h);
+
+		h.clear();
+		h.add(10);
+		h.add(100);
+		h.add(20);
+		System.out.println(h);
+		h.copy(3);
+		System.out.println( "after copy(3)");
+		System.out.println(h);
+		for (Integer x : h) {
+			System.out.print("" + x + ",");
+		}
+		System.out.println("");
+		/*while (!h.isEmpty()) {
+			System.out.print("" + h.remove() + ",");
+		}
+		System.out.println(""); */
+
+
+		// stack a copy
+		h.copy(2);
+		System.out.println( "after (stacked) copy(2)");
+		System.out.println(h);
+
+		h.copy(1);
+		System.out.println( "after copy(1)");
+		System.out.println(h);
+
+		h.copy(0);
+		System.out.println( "after copy(0)");
+		System.out.println(h);
+	}
+
+}

@@ -1,0 +1,67 @@
+{
+  "pkg_name": "comp2402w23l3",
+  "main_java_file": "Part2",
+  "test_subdir": null,
+  "test_cases": [
+    {
+      "name": "0 - compilation only",
+      "infile":"lab3-p2-1-in.txt",
+      "outfile":"lab3-p2-1-out.txt"
+    },
+    {
+      "name": "1 - empty file - output nothing",
+      "flags": ["-Xss144k", "-Xmx6m"],
+      "infile":"lab3-p2-1-in.txt",
+      "outfile":"lab3-p2-1-out.txt"
+    },
+    {
+      "name": "2 - two multiples - same as Lab 1 Part 3",
+      "flags": ["-Xss144k", "-Xmx6m"],
+      "infile":"lab3-p2-2-in.txt",
+      "outfile":"lab3-p2-2-out.txt"
+    },
+    {
+      "name": "3 - a few lines, some multiples",
+      "flags": ["-Xss144k", "-Xmx6m"],
+      "infile":"lab3-p2-3-in.txt",
+      "outfile":"lab3-p2-3-out.txt"
+    },
+    {
+      "name": "4 - a few lines, some multiples, some ties",
+      "flags": ["-Xss144k", "-Xmx6m"],
+      "infile":"lab3-p2-4-in.txt",
+      "outfile":"lab3-p2-4-out.txt"
+    },
+    {
+      "name": "5 - contains integer bigger than 240223 -- no mods here",
+      "flags": ["-Xss144k", "-Xmx6m"],
+      "infile":"lab3-p2-5-in.txt",
+      "outfile":"lab3-p2-5-out.txt"
+    },
+    {
+      "name": "6 - contains a really big integer -- no overflow here",
+      "flags": ["-Xss144k", "-Xmx6m"],
+      "infile":"lab3-p2-6-in.txt",
+      "outfile":"lab3-p2-6-out.txt"
+    },
+    {
+      "name": "7 - from the specifications -- different from Lab 1 Part 3",
+      "flags": ["-Xss144k", "-Xmx6m"],
+      "infile":"lab3-p2-7-in.txt",
+      "outfile":"lab3-p2-7-out.txt"
+    },
+    {
+      "name": "8 - different from Lab 1 Part 3",
+      "flags": ["-Xss144k", "-Xmx6m"],
+      "infile":"lab3-p2-8-in.txt",
+      "outfile":"lab3-p2-8-out.txt"
+    },
+    {
+      "name": "9 - different from Lab 1 Part 3",
+      "flags": ["-Xss144k", "-Xmx6m"],
+      "infile":"lab3-p2-9-in.txt",
+      "outfile":"lab3-p2-9-out.txt"
+    }
+
+  ]
+}

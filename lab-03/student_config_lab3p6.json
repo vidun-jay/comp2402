@@ -1,0 +1,60 @@
+{
+  "pkg_name": "comp2402w23l3",
+  "main_java_file": "Part6",
+  "test_subdir": null,
+  "test_cases": [
+    {
+      "name": "0 - compilation only",
+      "infile":"lab3-p6-1-in.txt",
+      "outfile":"lab3-p6-1-out.txt"
+    },
+    {
+      "name": "1 - empty file - output nothing",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab3-p6-1-in.txt",
+      "outfile":"lab3-p6-1-out.txt"
+    },
+    {
+      "name": "2 - one line - output that one line",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab3-p6-2-in.txt",
+      "outfile":"lab3-p6-2-out.txt"
+    },
+    {
+      "name": "3 - 3 lines",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab3-p6-3-in.txt",
+      "outfile":"lab3-p6-3-out.txt"
+    },
+    {
+      "name": "4 - from the specifications",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab3-p6-4-in.txt",
+      "outfile":"lab3-p6-4-out.txt"
+    },
+    {
+      "name": "5 - 7 lines",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab3-p6-5-in.txt",
+      "outfile":"lab3-p6-5-out.txt"
+    },
+    {
+      "name": "6 - 15 lines",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab3-p6-6-in.txt",
+      "outfile":"lab3-p6-6-out.txt"
+    },
+    {
+      "name": "7 - 31 lines",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab3-p6-7-in.txt",
+      "outfile":"lab3-p6-7-out.txt"
+    },
+    {
+      "name": "8 - 63 lines",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab3-p6-8-in.txt",
+      "outfile":"lab3-p6-8-out.txt"
+    }
+  ]
+}

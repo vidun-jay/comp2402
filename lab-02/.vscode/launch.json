@@ -1,0 +1,99 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayQueue",
+            "request": "launch",
+            "mainClass": "comp2402w23l2.ArrayQueue",
+            "projectName": "lab-02_14545b48"
+        },
+        {
+            "type": "java",
+            "name": "Launch MyDLList",
+            "request": "launch",
+            "mainClass": "comp2402w23l2.MyDLList",
+            "projectName": "lab-02_14545b48"
+        },
+        {
+            "type": "java",
+            "name": "Launch MySkiplistList",
+            "request": "launch",
+            "mainClass": "comp2402w23l2.MySkiplistList",
+            "projectName": "lab-02_14545b48"
+        },
+        {
+            "type": "java",
+            "name": "Launch Part1",
+            "request": "launch",
+            "mainClass": "comp2402w23l2.Part1",
+            "projectName": "lab-02_14545b48"
+        },
+        {
+            "type": "java",
+            "name": "Launch Part2",
+            "request": "launch",
+            "mainClass": "comp2402w23l2.Part2",
+            "projectName": "lab-02_14545b48"
+        },
+        {
+            "type": "java",
+            "name": "Launch Part3",
+            "request": "launch",
+            "mainClass": "comp2402w23l2.Part3",
+            "projectName": "lab-02_14545b48"
+        },
+        {
+            "type": "java",
+            "name": "Launch Part4",
+            "request": "launch",
+            "mainClass": "comp2402w23l2.Part4",
+            "projectName": "lab-02_14545b48"
+        },
+        {
+            "name": "Launch Part5",
+            "type": "java",
+            "args": ["./tests/lab2-p5-4-in.txt", "comp2402w23l2/out.txt"],
+            "request": "launch",
+            "mainClass": "comp2402w23l2.Part5",
+            "projectName": "lab-02_14545b48"
+        },
+        {
+            "type": "java",
+            "name": "Launch Part6",
+            "request": "launch",
+            "mainClass": "comp2402w23l2.Part6",
+            "projectName": "lab-02_14545b48"
+        },
+        {
+            "type": "java",
+            "name": "Launch SEList",
+            "request": "launch",
+            "mainClass": "comp2402w23l2.SEList",
+            "projectName": "lab-02_14545b48"
+        },
+        {
+            "type": "java",
+            "name": "Launch SLList",
+            "request": "launch",
+            "mainClass": "comp2402w23l2.SLList",
+            "projectName": "lab-02_14545b48"
+        },
+        {
+            "type": "java",
+            "name": "Launch SkiplistList",
+            "request": "launch",
+            "mainClass": "comp2402w23l2.SkiplistList",
+            "projectName": "lab-02_14545b48"
+        }
+    ]
+}

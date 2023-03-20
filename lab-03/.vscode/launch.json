@@ -1,0 +1,123 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "MyIntBST",
+            "request": "launch",
+            "mainClass": "comp2402w23l3.MyIntBST",
+            "projectName": "lab-03_14545b49"
+        },
+        {
+            "type": "java",
+            "name": "MySkiplistSSet",
+            "request": "launch",
+            "mainClass": "comp2402w23l3.MySkiplistSSet",
+            "projectName": "lab-03_14545b49"
+        },
+        {
+            "type": "java",
+            "name": "Part1",
+            "request": "launch",
+            "mainClass": "comp2402w23l3.Part1",
+            "projectName": "lab-03_14545b49"
+        },
+        {
+            "type": "java",
+            "name": "Part2",
+            "request": "launch",
+            "mainClass": "comp2402w23l3.Part2",
+            "projectName": "lab-03_14545b49"
+        },
+        {
+            "type": "java",
+            "name": "Part3",
+            "request": "launch",
+            "mainClass": "comp2402w23l3.Part3",
+            "projectName": "lab-03_14545b49"
+        },
+        {
+            "type": "java",
+            "name": "Part4",
+            "request": "launch",
+            "mainClass": "comp2402w23l3.Part4",
+            "projectName": "lab-03_14545b49"
+        },
+        {
+            "type": "java",
+            "name": "Part5",
+            "request": "launch",
+            "mainClass": "comp2402w23l3.Part5",
+            "projectName": "lab-03_14545b49",
+            // "args": ["./tests/lab3-p5-0-in.txt", "comp2402w23l3/out.txt"],
+            // "args": ["./tests/lab3-p5-1-in.txt", "comp2402w23l3/out.txt"],
+            // "args": ["./tests/lab3-p5-2-in.txt", "comp2402w23l3/out.txt"],
+            "args": ["./tests/lab3-p5-3-in.txt", "comp2402w23l3/out.txt"],
+            // "args": ["./tests/lab3-p5-4-in.txt", "comp2402w23l3/out.txt"],
+            // "args": ["./tests/lab3-p5-5-in.txt", "comp2402w23l3/out.txt"],
+            // "args": ["./tests/lab3-p5-6-in.txt", "comp2402w23l3/out.txt"],
+            // "args": ["./tests/lab3-p5-7-in.txt", "comp2402w23l3/out.txt"],
+            "jvmArgs": ["-Xss208k", "-Xmx6m"]
+        },
+        {
+            "type": "java",
+            "name": "Part6",
+            "request": "launch",
+            "mainClass": "comp2402w23l3.Part6",
+            "projectName": "lab-03_14545b49",
+            // "args": ["./tests/lab3-p5-0-in.txt", "comp2402w23l3/out.txt"],
+            // "args": ["./tests/lab3-p5-1-in.txt", "comp2402w23l3/out.txt"],
+            // "args": ["./tests/lab3-p5-2-in.txt", "comp2402w23l3/out.txt"],
+            "args": ["./tests/lab3-p5-3-in.txt", "comp2402w23l3/out.txt"],
+            // "args": ["./tests/lab3-p5-4-in.txt", "comp2402w23l3/out.txt"],
+            // "args": ["./tests/lab3-p5-5-in.txt", "comp2402w23l3/out.txt"],
+            // "args": ["./tests/lab3-p5-6-in.txt", "comp2402w23l3/out.txt"],
+            // "args": ["./tests/lab3-p5-7-in.txt", "comp2402w23l3/out.txt"],
+            "jvmArgs": ["-Xss208k", "-Xmx6m"]
+        },
+        {
+            "type": "java",
+            "name": "ArrayQueue",
+            "request": "launch",
+            "mainClass": "ods.ArrayQueue",
+            "projectName": "lab-03_14545b49"
+        },
+        {
+            "type": "java",
+            "name": "SEList",
+            "request": "launch",
+            "mainClass": "ods.SEList",
+            "projectName": "lab-03_14545b49"
+        },
+        {
+            "type": "java",
+            "name": "SLList",
+            "request": "launch",
+            "mainClass": "ods.SLList",
+            "projectName": "lab-03_14545b49"
+        },
+        {
+            "type": "java",
+            "name": "SkiplistList",
+            "request": "launch",
+            "mainClass": "ods.SkiplistList",
+            "projectName": "lab-03_14545b49"
+        },
+        {
+            "type": "java",
+            "name": "SkiplistSSet",
+            "request": "launch",
+            "mainClass": "ods.SkiplistSSet",
+            "projectName": "lab-03_14545b49"
+        }
+    ]
+}
