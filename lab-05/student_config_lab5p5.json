@@ -1,0 +1,85 @@
+{
+  "pkg_name": "comp2402w23l5",
+  "main_java_file": "Part5",
+  "test_subdir": null,
+  "test_cases": [
+    {
+      "name": "0 - compilation only",
+      "infile":"lab5-p5-2-in.txt",
+      "outfile":"lab5-p5-2-out.txt"
+    },
+    {
+      "name": "1 - empty file - output nothing",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"empty.txt",
+      "outfile":"empty.txt"
+    },
+    {
+      "name": "2 - 10 prime numbers - output nothing",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p5-2-in.txt",
+      "outfile":"empty.txt"
+    },
+    {
+      "name": "3 - 16 primes with a 1 after the first 8",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p5-3-in.txt",
+      "outfile":"lab5-p5-3-out.txt"
+    },
+    {
+      "name": "4 - 20 decreasing integers from 21 down to 1 - output nothing",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p5-4-in.txt",
+      "outfile":"lab5-p5-4-out.txt"
+    },
+    {
+      "name": "5 - from the specifications",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p5-5-in.txt",
+      "outfile":"lab5-p5-5-out.txt"
+    },
+    {
+      "name": "6 - 1 and then 20 integers - output all but first line",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p5-6-in.txt",
+      "outfile":"lab5-p5-6-out.txt"
+    },
+    {
+      "name": "7 - alternating 240223 with other integers (i.e. lots of duplicates)",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p5-7-in.txt",
+      "outfile":"lab5-p5-7-out.txt"
+    },
+    {
+      "name": "8 - tiny (19-line) random file",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p5-8-in.txt",
+      "outfile":"lab5-p5-8-out.txt"
+    },
+    {
+      "name": "9 - small (n ~ 100) random file",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p5-9-in.txt",
+      "outfile":"lab5-p5-9-out.txt"
+    },
+    {
+      "name": "10 - medium-small n (n ~1000)",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p5-10-in.txt",
+      "outfile":"lab5-p5-10-out.txt"
+    },
+    {
+      "name": "11 - medium n (n ~10,000)",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p5-11-in.txt",
+      "outfile":"lab5-p5-11-out.txt"
+    },
+    {
+      "name": "12 - large n (n ~100,000)",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p5-12-in.txt",
+      "outfile":"lab5-p5-12-out.txt"
+    }
+
+  ]
+}

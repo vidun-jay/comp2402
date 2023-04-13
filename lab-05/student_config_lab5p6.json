@@ -1,0 +1,105 @@
+{
+  "pkg_name": "comp2402w23l5",
+  "main_java_file": "Part6",
+  "test_subdir": null,
+  "test_cases": [
+    {
+      "name": "0 - compilation only",
+      "params": ["5"],
+      "infile":"lab5-p6-1-in.txt",
+      "outfile":"lab5-p6-1-out.txt"
+    },
+    {
+      "name": "1 - empty file - output 0 since x > 0",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "params": ["5"],
+      "infile":"lab5-p6-1-in.txt",
+      "outfile":"lab5-p6-1-out.txt"
+    },
+    {
+      "name": "2 - from the specifications",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "params": ["5"],
+      "infile":"lab5-p6-2-in.txt",
+      "outfile":"lab5-p6-2-out.txt"
+    },
+    {
+      "name": "3 - small 4-node example",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "params": ["4"],
+      "infile":"lab5-p6-3-in.txt",
+      "outfile":"lab5-p6-3-out.txt"
+    },
+    {
+      "name": "4 - same graph as example 3 but different order leads to different bfs",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "params": ["4"],
+      "infile":"lab5-p6-4-in.txt",
+      "outfile":"lab5-p6-4-out.txt"
+    },
+    {
+      "name": "5 - 17-node binary tree rooted at 0, all nodes reachable",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "params": ["17"],
+      "infile":"lab5-p6-5-in.txt",
+      "outfile":"lab5-p6-5-out.txt"
+    },
+    {
+      "name": "6 - random file with 8 edges, x=4, all reachable",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "params": ["4"],
+      "infile":"lab5-p6-6-in.txt",
+      "outfile":"lab5-p6-6-out.txt"
+    },
+    {
+      "name": "7 - same file as example 6 with 8 edges, x=8, none reachable",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "params": ["8"],
+      "infile":"lab5-p6-6-in.txt",
+      "outfile":"lab5-p6-7-out.txt"
+    },
+    {
+      "name": "8 - random file with 20 edges, x=8 all but one reachable",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "params": ["8"],
+      "infile":"lab5-p6-8-in.txt",
+      "outfile":"lab5-p6-8-out.txt"
+    },
+    {
+      "name": "9 - random file with 100 edges, x=50 only 2 reachable",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "params": ["50"],
+      "infile":"lab5-p6-9-in.txt",
+      "outfile":"lab5-p6-9-out.txt"
+    },
+    {
+      "name": "10 - same file as example 2 but x=30 all reachable",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "params": ["30"],
+      "infile":"lab5-p6-9-in.txt",
+      "outfile":"lab5-p6-10-out.txt"
+    },
+    {
+      "name": "11 - random file with 1000 edges, x=400",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "params": ["400"],
+      "infile":"lab5-p6-11-in.txt",
+      "outfile":"lab5-p6-11-out.txt"
+    },
+    {
+      "name": "12 - small file with duplicate edges that should not affect outcome",
+      "flags": ["-Xss208k", "-Xmx256m"],
+      "params": ["4"],
+      "infile":"lab5-p6-12-in.txt",
+      "outfile":"lab5-p6-12-out.txt"
+    },
+    {
+      "name": "13 - x=0 output nothing",
+      "flags": ["-Xss208k", "-Xmx256m"],
+      "params": ["0"],
+      "infile":"lab5-p6-12-in.txt",
+      "outfile":"empty.txt"
+    }
+
+  ]
+}

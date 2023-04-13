@@ -1,0 +1,68 @@
+{
+  "pkg_name": "comp2402w23l5",
+  "main_java_file": "Part4",
+  "test_subdir": null,
+  "test_cases": [
+    {
+      "name": "0 - compilation only",
+      "infile":"lab5-p4-1-in.txt",
+      "outfile":"lab5-p4-1-out.txt"
+    },
+    {
+      "name": "1 - empty file - output nothing",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p4-1-in.txt",
+      "outfile":"lab5-p4-1-out.txt"
+    },
+    {
+      "name": "2 - two multiples - print prev not multiple itself",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p4-2-in.txt",
+      "outfile":"lab5-p4-2-out.txt"
+    },
+    {
+      "name": "3 - a few lines, some multiples, some duplicates",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p4-3-in.txt",
+      "outfile":"lab5-p4-3-out.txt"
+    },
+    {
+      "name": "4 - all the same multiple",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p4-4-in.txt",
+      "outfile":"lab5-p4-4-out.txt"
+    },
+    {
+      "name": "5 - all the same previous",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p4-5-in.txt",
+      "outfile":"lab5-p4-5-out.txt"
+    },
+    {
+      "name": "6 - from the specifications",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p4-6-in.txt",
+      "outfile":"lab5-p4-6-out.txt"
+    },
+    {
+      "name": "7 - different from previous Labs",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p4-7-in.txt",
+      "outfile":"lab5-p4-7-out.txt"
+    },
+    {
+      "name": "8 - different from previous labs",
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p4-8-in.txt",
+      "outfile":"lab5-p4-8-out.txt"
+    },
+
+    {
+      "name": "9 - n~600",
+      "flags": ["-Xss208k", "-Xmx64m"],
+      "infile":"lab5-p4-9-in.txt",
+      "outfile":"lab5-p4-9-out.txt"
+    }
+
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "pkg_name": "comp2402w23l5",
+  "main_java_file": "Part1",
+  "test_subdir": null,
+  "test_cases": [
+    {
+      "name": "0 - compilation only",
+      "params": ["4"],
+      "infile":"empty.txt",
+      "outfile":"empty.txt"
+    },
+    {
+      "name": "1 - empty file",
+      "params": ["4"],
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"empty.txt",
+      "outfile":"empty.txt"
+    },
+    {
+      "name": "2 - two multiples, x=1 (diff from Lab 1 Part 3)",
+      "params": ["1"],
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p1-2-in.txt",
+      "outfile":"lab5-p1-2-out.txt"
+    },
+    {
+      "name": "3 - a few lines, >x multiples (diff from Lab 1 Part 3)",
+      "params": ["5"],
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p1-3-in.txt",
+      "outfile":"lab5-p1-3-out.txt"
+    },
+    {
+      "name": "4 - x=0, with some multiples",
+      "params": ["0"],
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p1-4-in.txt",
+      "outfile":"lab5-p1-4-out.txt"
+    },
+    {
+      "name": "5 - x > multiples, also contains integer bigger than 240223",
+      "params": ["1000"],
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p1-5-in.txt",
+      "outfile":"lab5-p1-5-out.txt"
+    },
+    {
+      "name": "6 - x < # multiples, contains a really big integer",
+      "params": ["2"],
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p1-6-in.txt",
+      "outfile":"lab5-p1-6-out.txt"
+    },
+    {
+      "name": "7 - from the specifications -- different from Lab 1 Part 3",
+      "params": ["2"],
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p1-7-in.txt",
+      "outfile":"lab5-p1-7-out.txt"
+    },
+    {
+      "name": "8 - x=#multiples",
+      "params": ["5"],
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p1-8-in.txt",
+      "outfile":"lab5-p1-8-out.txt"
+    },
+    {
+      "name": "9 - x=1 < # multiples",
+      "params": ["1"],
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p1-9-in.txt",
+      "outfile":"lab5-p1-9-out.txt"
+    },
+    {
+      "name": "10 - big n (n > 1,000,000)",
+      "params": ["500000"],
+      "flags": ["-Xss208k", "-Xmx64m"],
+      "infile":"lab5-p1-10-in.txt",
+      "outfile":"lab5-p1-10-out.txt"
+    },
+    {
+      "name": "11 - big n (n > 1,000,000), medium x -- should not be time intensive!",
+      "params": ["100000"],
+      "flags": ["-Xss208k", "-Xmx64m"],
+      "infile":"lab5-p1-10-in.txt",
+      "outfile":"lab5-p1-11-out.txt"
+    },
+    {
+      "name": "12 - big n (n > 1,000,000), small x -- should not be space intensive!",
+      "params": ["100"],
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p1-10-in.txt",
+      "outfile":"lab5-p1-12-out.txt"
+    }
+
+
+
+  ]
+}

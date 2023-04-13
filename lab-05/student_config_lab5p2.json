@@ -1,0 +1,139 @@
+{
+  "pkg_name": "comp2402w23l5",
+  "main_java_file": "Part2",
+  "test_subdir": null,
+  "test_cases": [
+    {
+      "name": "0 - compilation only",
+      "params": ["4"],
+      "infile":"empty.txt",
+      "outfile":"empty.txt"
+    },
+    {
+      "name": "1 - empty file",
+      "params": ["4"],
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"empty.txt",
+      "outfile":"empty.txt"
+    },
+    {
+      "name": "2 - small example x=1",
+      "params": ["1"],
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p2-2-in.txt",
+      "outfile":"lab5-p2-2-out-x-1.txt"
+    },
+    {
+      "name": "3 - small example x=2",
+      "params": ["2"],
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p2-2-in.txt",
+      "outfile":"lab5-p2-2-out-x-2.txt"
+    },
+    {
+      "name": "4 - small example x=3",
+      "params": ["3"],
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p2-2-in.txt",
+      "outfile":"lab5-p2-2-out-x-3.txt"
+    },
+    {
+      "name": "5 - small example x>num lines",
+      "params": ["10"],
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p2-2-in.txt",
+      "outfile":"lab5-p2-2-out-x-3.txt"
+    },
+    {
+      "name": "6 - from the specifications x=2",
+      "params": ["2"],
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p2-3-in.txt",
+      "outfile":"lab5-p2-3-out-x-2.txt"
+    },
+    {
+      "name": "7 - from the specifications x=3",
+      "params": ["3"],
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p2-3-in.txt",
+      "outfile":"lab5-p2-3-out-x-3.txt"
+    },
+    {
+      "name": "8 - a few lines, >x multiples all distinct (same as Part 1)",
+      "params": ["5"],
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p2-8-in.txt",
+      "outfile":"lab5-p2-8-out-x-5.txt"
+    },
+    {
+      "name": "9 - x=0, with some multiples (same as Part 1)",
+      "params": ["0"],
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p2-8-in.txt",
+      "outfile":"lab5-p1-4-out.txt"
+    },
+    {
+      "name": "10 - x > multiples, also contains integer bigger than 240223",
+      "params": ["1000"],
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p2-10-in.txt",
+      "outfile":"lab5-p2-10-out-x-1000.txt"
+    },
+    {
+      "name": "11 - x < # multiples, contains a really big integer (same as Part 1)",
+      "params": ["2"],
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p2-11-in.txt",
+      "outfile":"lab5-p1-6-out.txt"
+    },
+    {
+      "name": "12 - Part 1 specifications x=2, same as Part 1",
+      "params": ["2"],
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p1-7-in.txt",
+      "outfile":"lab5-p1-7-out.txt"
+    },
+    {
+      "name": "13 - x=#multiples",
+      "params": ["5"],
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p2-13-in.txt",
+      "outfile":"lab5-p2-13-out-x-5.txt"
+    },
+    {
+      "name": "14 - x=10 > # multiples",
+      "params": ["10"],
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p2-14-in.txt",
+      "outfile":"lab5-p2-14-out.txt"
+    },
+    {
+      "name": "15 - big n (n > 1,000,000), big x -- should not be time intensive!",
+      "params": ["500000"],
+      "flags": ["-Xss208k", "-Xmx64m"],
+      "infile":"lab5-p2-15-in.txt",
+      "outfile":"lab5-p2-15-out.txt"
+    },
+    {
+      "name": "16 - big n (n > 1,000,000), medium x -- should not be time intensive!",
+      "params": ["100000"],
+      "flags": ["-Xss208k", "-Xmx64m"],
+      "infile":"lab5-p2-15-in.txt",
+      "outfile":"lab5-p2-16-out.txt"
+    },
+    {
+      "name": "17 - big n (n > 1,000,000), small x -- should not be space intensive!",
+      "params": ["100"],
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p2-15-in.txt",
+      "outfile":"lab5-p2-17-out.txt"
+    },
+    {
+      "name": "18 - from the specifications (second example)",
+      "params": ["3"],
+      "flags": ["-Xss208k", "-Xmx6m"],
+      "infile":"lab5-p2-18-in.txt",
+      "outfile":"lab5-p2-18-out-x-3.txt"
+    }
+  ]
+}
